@@ -15,10 +15,6 @@ file.write(str(student) + "\n")
 # Write CSV file
 with open("students.csv", "w", newline="") as file:
 fields = ["RollNo", "Name", "Department", "Mark"]
-
-Code/Subject: AD/AM/IT/CB/CZ/CS6102 – EXPLORATION IN ARTIFICIAL INTELLIGENCE
-
-15 | P a g e
 writer = csv.DictWriter(file, fieldnames=fields)
 writer.writeheader()
 writer.writerows(students)
